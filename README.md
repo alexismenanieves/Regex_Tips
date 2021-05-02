@@ -1,6 +1,6 @@
 ## README
 
-This project contains a Rmarkdown file with useful tips for Regex. Some cases relate to reading logs, separate text with capitalized letters and match sequences for addresses. You are expected to run Rmarkdown on RStudio. R 3.6 or above is required. The direct link is here: [View code] (https://github.com/alexismenanieves/Regex_Tips/blob/main/Regex_Tips.md)
+This project contains a Rmarkdown file with useful tips for Regex. Some cases relate to reading logs, separate text with capitalized letters and match sequences for addresses. You are expected to run Rmarkdown on RStudio. R 3.6 or above is required. The direct link is here: [View code](https://github.com/alexismenanieves/Regex_Tips/blob/main/Regex_Tips.md)
 
 ### Structure
 
