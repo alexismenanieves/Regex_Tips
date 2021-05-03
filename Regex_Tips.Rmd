@@ -7,6 +7,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(magrittr)
+library(stringr)
 ```
 
 ## Case 1. Reading logs
@@ -51,7 +52,7 @@ logs_data_frame
 
 ## Case 2. Separate by capitalized letters
 
-You have authors names which have the first letter capitalized but are joined:
+You have musicians names which have the first letter capitalized but are joined:
 
 ```{r}
 musicians <- c("AlanisMorisette","ACDC","PearlJam",
@@ -69,5 +70,21 @@ Let's see the result:
 ```{r}
 # Sure I prefer Pearl Jam and Creedence Clearwater Revival
 musicians
+```
+
+## Case 3. Match a specific ingredient pattern
+
+You have a product description where you want to capture the ingredient, which have an specific pattern:
+
+```{r}
+description <- c("Bakery: Desdemona (Desserts; A9B-APO) 7th Avenue")
+```
+
+All the ingredients have the following structure: three alphanumeric characters, an hyphen and three alphanumeric characters. So we want to capture this pattern:
+
+```{r}
+# We will use the stringr library to extract our pattern.
+ingredient <- str_extract(description, '([a-zA-Z0-9]{3}-[a-zA-Z0-9]{3})')
+ingredient 
 ```
 
