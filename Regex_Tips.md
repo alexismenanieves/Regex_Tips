@@ -71,9 +71,10 @@ You are required to separate the text by the capitalized letter:
 musicians <- gsub('([a-z])([A-Z])', '\\1 \\2', musicians, perl = TRUE)
 ```
 
-Let0’s see the result
+Let’s see the result:
 
 ``` r
+# Sure I prefer Pearl Jam and Creedence Clearwater Revival
 musicians
 ```
 
