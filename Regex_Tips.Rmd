@@ -74,7 +74,7 @@ musicians
 
 ## Case 3. Match a specific ingredient pattern
 
-You have a product description where you want to capture the ingredient, which have an specific pattern:
+You have a product description and you want to capture the ingredient, which have an specific pattern:
 
 ```{r}
 description <- c("Bakery: Desdemona (Desserts; A9B-APO) 7th Avenue")
