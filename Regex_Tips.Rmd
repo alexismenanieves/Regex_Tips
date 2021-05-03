@@ -67,6 +67,7 @@ musicians <- gsub('([a-z])([A-Z])', '\\1 \\2', musicians, perl = TRUE)
 
 Let's see the result:
 ```{r}
+# Sure I prefer Pearl Jam and Creedence Clearwater Revival
 musicians
 ```
 
