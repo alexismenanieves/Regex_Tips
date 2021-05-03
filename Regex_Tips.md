@@ -56,7 +56,7 @@ logs_data_frame
 
 ## Case 2. Separate by capitalized letters
 
-You have authors names which have the first letter capitalized but are
+You have musicians names which have the first letter capitalized but are
 joined:
 
 ``` r
@@ -81,3 +81,24 @@ musicians
     ## [1] "Alanis Morisette"             "ACDC"                        
     ## [3] "Pearl Jam"                    "will.i.am"                   
     ## [5] "Creedence Clearwater Revival"
+
+## Case 3. Match a specific ingredient pattern
+
+You have a product description and you want to capture the ingredient,
+which have an specific pattern:
+
+``` r
+description <- c("Bakery: Desdemona (Desserts; A9B-APO) 7th Avenue")
+```
+
+All the ingredients have the following structure: three alphanumeric
+characters, an hyphen and three alphanumeric characters. So we want to
+capture this pattern:
+
+``` r
+# We will use the stringr library to extract our pattern.
+ingredient <- str_extract(description, '([a-zA-Z0-9]{3}-[a-zA-Z0-9]{3})')
+ingredient 
+```
+
+    ## [1] "A9B-APO"
